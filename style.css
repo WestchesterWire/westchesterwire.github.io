@@ -461,6 +461,49 @@ a { color: var(--ink); }
   line-height: 1.5;
 }
 
+/* ═══ FOOD CARDS ═══ */
+.food-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.food-card {
+  border: 1px solid var(--border);
+  background-color: var(--white);
+  padding: 14px;
+}
+
+.food-card__meta {
+  font-family: var(--font-mono);
+  font-size: 8.5px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.food-card__meta--open { color: #5a7a5c; }
+.food-card__meta--upcoming { color: var(--gold); }
+
+.food-card__name {
+  font-family: var(--font-headline);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 6px;
+}
+
+.food-card__desc {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #3a3630;
+}
+
+@media (max-width: 480px) {
+  .food-grid { grid-template-columns: 1fr; }
+}
+
 /* ═══ QUICK HITS ═══ */
 .quick-hits {
   font-size: 14px;
